@@ -1,14 +1,3 @@
--- =====================================================
--- DATABASE BACKUP - microservices_db
--- Backup Date: 2026-04-05
--- Created By: Database Backup System (mysqldump)
--- Database: microservices_db
--- =====================================================
--- This is a full backup of the microservices database
--- including schema and all data.
--- To restore: mysql -u root -p < backup_20260405.sql
--- =====================================================
-
 DROP DATABASE IF EXISTS microservices_db;
 CREATE DATABASE microservices_db;
 USE microservices_db;
@@ -163,7 +152,3 @@ INSERT INTO payments (order_id, payment_method, amount, status) VALUES
 (1, 'credit_card', 16340000, 'completed'),
 (2, 'bank_transfer', 4580000, 'pending'),
 (3, 'e_wallet', 2190000, 'completed');
-
--- =====================================================
--- BACKUP COMPLETED - 2026-04-05
--- =====================================================
