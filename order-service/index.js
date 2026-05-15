@@ -18,7 +18,7 @@ const db = mysql.createPool({
 
 
 app.get('/', (req, res) => {
-  res.json({ message: 'User service is running' });
+  res.json({ message: 'Order service is running' });
 });
 
 
